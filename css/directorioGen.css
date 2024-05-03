@@ -1,0 +1,48 @@
+/* Formato  general*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Formato del contenedor */
+.contenedor{
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 20px;
+    background: #fff;
+    padding: 30px;
+}
+
+/* Formato del titulo */
+.titulo h1{
+    color: #758317;
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0 10px 0px;
+}
+
+/* Formato del subtitulo */
+.titulo h2{
+    color: #007BFF;
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 0px 10px 0px;
+}
+
+/* Formato del titulo especifico dentro del texto */
+.contenedor h3{
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #180DFF;
+}
+
+/* Formato de cada elemento de las listas */
+.contenedor li{
+    font-family: Tahoma;
+    padding: 10px;
+    margin: 25px 4px;
+    font-size: 16px;
+    list-style-image: url(../imagenes/lista3.png); /* URL de la imagen externa para las viñetas */
+}
+

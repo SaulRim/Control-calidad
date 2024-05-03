@@ -1,0 +1,133 @@
+/* Formato general */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor general y posicionamiento del contenido*/
+.contenedor {
+	width: 100%;
+	max-width: 1200px;
+	margin: 20px auto;
+	display: grid;
+	grid-template-columns: 75% 25%;
+	gap: 20px;
+}
+
+/* Formato de los enlaces de la barra de navegación derecha*/
+.enlaces {
+	background: #fff;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+/* Formato de los vinculos en la barra de navegación*/
+.nav a {
+	display: block;
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 25px;
+	color: #2063ff;
+}
+
+.TL-link{
+  color: #2063ff; /* Establece el color del hipervínculo */
+}
+
+.TL-link:visited {
+  color: #2063ff; /* Establece el color del hipervínculo después de haber sido visitado */
+}
+
+/* Animación de la barra de navegación */
+.nav a:hover {
+	background: #0C3CE8;
+	color: #fff;
+	
+}
+
+.nav a.activo {  /* Establece el color del hipervínculo */
+	background: #2063ff;
+	color: #fff;
+}
+
+/* Formato del contenido de las tarjetas de información */
+.seccion {
+	padding: 0px 40px 40px 40px;
+	margin-bottom: 40px;
+	border-radius: 5px;
+	background: #fff;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/* margen entre la sección del titulo y el contenido */
+.seccion br {
+	margin-bottom: 20px;
+}
+
+/* Formato del subtitulo de cada tarjeta */
+.encabezado {
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* Formato de los enlaces de cada tarjeta */
+.encabezado a {
+	display: inline-flex;
+	align-items: center;
+	margin-left: 10px;
+}
+
+/* formato del titulo */
+.title{
+    color: #758317;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+/* Formato de los elemetos de la tarjeta */
+
+.contenedor li{
+    font-family: Tahoma;
+    padding: 10px;
+    margin: -1px 4px;
+    font-size: 16px;
+    border: 1px solid #CCC;
+    border-collapse: collapse;
+}
+
+/* formato de las imagenes de la tarjeta */
+figure{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: #f6f6f6;
+}
+
+
+.recurso{
+    max-width: 150px;
+}
+
+/* formato del boton para regresar al inicio de la pagina */
+ .arriba{
+    display: inline-block;
+    font-size: 25px;
+    padding: 5px;
+    color: #fff;
+    background: #0CB0E8;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 10%;
+ }

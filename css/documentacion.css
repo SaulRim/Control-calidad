@@ -1,0 +1,75 @@
+/* Formato general del contenedor */
+.box{
+    width: 80%;
+    margin: 10px 10px;
+    margin-left: 15%;
+}
+
+/* Titulo principal */
+.title{
+    color: #758317;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Subtitulo*/
+.box h2{
+    background: #0CB0E8;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Quitar el formato de los vinculos*/
+.box a{
+    text-decoration: none;
+}
+
+/* Modificar el formato de la lista y numeración*/
+.box ul li{
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    color: #333;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    transition: transform 0.3s;
+}
+
+/* Animación de la lista */
+.box ul li:hover{
+    transform: scale(1.05);
+    z-index: 100;
+    background-color: #0C3CE8;
+    color: #fff;
+}
+
+/* Formato de la numeración */
+.box ul li span{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: #0CB0E8;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+/* Animación de la numeración*/
+.box ul li:hover span{
+    background: #fff;
+    color: #180DFF;
+}
+
+/* Modificación del margen entre la tabla y la pagina */
+.box ul{
+    margin: 15px 0px;
+}

@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+#tituloHeader{
+    color: #758317;
+    text-align: center;
+    margin: 15px 0;
+    font-size: 36px;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+.tarjetas{
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 400px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.tarjetas li{
+    position: relative;
+    list-style: none;
+    width: 400px;
+    height: 70px;
+    padding: 15px;
+    background: #fff;
+    gap: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0 -10px 15px rgba(0,0,200,.1);
+    transition: 0.2s;
+    transition-delay: calc(var(--i)*.2s);
+}
+
+.tarjetas li:nth-child(1){
+    transform: translateZ(-60px) translateY(20px);
+}
+
+.tarjetas li:nth-child(2){
+    transform: translateZ(-30px) translateY(0px);
+}
+
+.tarjetas li:nth-child(3){
+    transform: translateZ(0px) translateY(-20px);
+}
+
+.tarjetas li:nth-child(4){
+    transform: translateZ(30px) translateY(-40px);
+    opacity: #fff;
+}
+.tarjetas li:nth-child(5){
+    transform: translateZ(60px) translateY(-60px);
+    opacity: #fff;
+}
+
+.tarjetas:hover{
+    gap: 30px;
+}
+
+.tarjetas:hover li{
+    transform: translateZ(0px) translateY(0px);
+    opacity: 1;
+    background: #fff;
+    font-size: 25px;
+}
+
+.tarjetas li:hover{
+    background-color: #0CB0E8;
+    color: #fff;    
+}
+
+.tarjetas li .content:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.tarjetas li ion-icon{
+    max-width: 70px;
+    border-radius: 4px;
+}
+
+.tarjetas li .content{
+    width: 100%;;
+    cursor: pointer;
+    border-bottom: 2px solid #888;
+}
+
+
+
+.tarjetas li .content h4{
+    font-weight: 600;
+    color: #333;
+}
+
+.tarjetas li .content p{
+    position: relative;
+    color: #333;
+    line-height: 1em;
+    width: 100%;
+}
+
+.tarjetas li .content p span{
+    position: absolute;
+    top:0;
+    right:0;
+    font-size:.75em;
+    color: #888;
+}

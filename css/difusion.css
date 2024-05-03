@@ -1,0 +1,38 @@
+ /*Formato general de la pagina*/
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ /*Color y posicionamiento del titulo*/
+.title{
+    color: #758317;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*Formato del video*/
+ .video{
+    margin: 15px 0px;
+    display: flex;
+    justify-content: center;
+ }
+ 
+ /*Formato de la tarjeta lateral*/
+ .tarjeta{
+     margin: 0px 15px;
+     background: #fff;
+     border-radius: 15px;
+     width: 250px;
+     height: 480px;
+     text-align: center;
+     padding: 10px;
+     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+     display: flex;
+     flex-direction: column;
+     justify-content: center
+ }
+ 

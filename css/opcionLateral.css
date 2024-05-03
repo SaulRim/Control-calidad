@@ -1,0 +1,91 @@
+/*Opciones generales de formato*/
+*{ 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/*Aspecto y posición del manu lateral*/
+nav{
+  position: fixed;
+  width: 70px;
+  margin-top: 150px;
+  transition: all 0.3s linear;
+  box-shadow: 2px 2px 8px 0px rgba(0,0,0,.4);
+}
+/*Alto de las opcines*/
+nav li{
+  height: 60px;
+  position:relative;
+}
+/*Letra y posición de los hipervinculos*/
+nav li a{
+  color: white;
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 60px;
+  padding-left:40%;
+  border-bottom: 1px solid rgba(0,0,0,.4);
+  transition: all .3s linear;
+}
+
+/*Color especifico de cada opción lateral*/
+nav li:nth-child(1) a{
+  background: #180DFF;
+}
+nav li:nth-child(2) a{
+  background: #0C3CE8;
+}
+nav li:nth-child(3) a{
+  background: #007BFF;
+}
+nav li:nth-child(4) a{
+  background: #0CB0E8;
+}
+
+/*Posicionamiento de los iconos*/
+nav li a i{
+  position:absolute;
+  top: 8px;
+  left: 20px;
+  font-size: 24px;
+}
+
+/*Modificación del texto en Span*/
+nav ul li a span{
+  display: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/*Movimiento/animaciones*/
+.op:hover {
+  z-index:1;
+  width: 300px;
+  border-bottom: 1px solid rgba(0,0,0,.5);
+  box-shadow: 0 0 1px 1px rgba(0,0,0,.3);
+}
+
+/*Movimiento/animaciones*/
+nav ul li:hover a span{
+  padding-left:15%;
+  display: block;
+}
+
+/*Animación especifica para el camponente de mayor tamaño*/
+.dos:hover{
+  z-index:1;
+  width: 360px;
+  border-bottom: 1px solid rgba(0,0,0,.5);
+  box-shadow: 0 0 1px 1px rgba(0,0,0,.3);
+}

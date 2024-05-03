@@ -1,0 +1,54 @@
+/*Formato general del contenedor de la pagina*/
+.contenedor{
+    margin: 50px auto;
+    width:80% ;
+}
+
+/*Titulo Principal*/
+.titulo h1{
+    color: #758317;
+    text-align: center;
+    font-size: 44px;
+    margin: 10px 0 10px 0;
+}
+/*Subtitulo*/
+.titulo h2{
+    color: #007BFF;
+    text-align: center;
+    font-size: 28px;
+    margin: 10px 0 10px 0;
+}
+
+/*Formato de la tabla*/
+table{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/*Fila de las filas*/
+th,td{
+    padding: 20px;
+}
+
+td a{
+  color: #2063ff; /* Establece el color del hipervínculo después de haber sido visitado */
+}
+
+td a:visited {
+  color: #2063ff; /* Establece el color del hipervínculo después de haber sido visitado */
+}
+
+
+thead{
+    background-color: #007BFF;
+    border-bottom: 1px solid black;
+    color: #fff;
+}
+tr:nth-child(even){ /* Color diferente para las filas impares */
+    background-color: #CCf;
+}
+tr:hover td{ /* Animación para la fila seleccionada */
+    background-color: #0CB0E8;
+}
